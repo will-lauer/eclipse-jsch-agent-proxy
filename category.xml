@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.jcraft.jsch.agentproxy.eclipse.sshagent_1.0.0.qualifier.jar" id="com.jcraft.jsch.agentproxy.eclipse.sshagent" version="1.0.0.qualifier">
+      <category name="sss-agent"/>
+   </feature>
+   <category-def name="sss-agent" label="Eclipse ssh-agent Support"/>
+</site>
