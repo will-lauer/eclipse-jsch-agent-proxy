@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="com.jcraft.jsch.agentproxy.eclipse.sshagent"
-      label="Eclipse ssh-agent support"
+      label="jsch-agent-proxy Connector for ssh-agent"
       version="1.0.0.qualifier"
-      provider-name="JCRAFT">
+      provider-name="JCraft, Inc.">
 
    <description>
       Eclipse Plug-in to use OpenSSH&apos;s ssh-agent.
