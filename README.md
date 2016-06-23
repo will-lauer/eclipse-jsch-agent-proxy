@@ -13,11 +13,15 @@ Provided plug-ins depend on [jsch-agent-proxy](http://www.jcraft.com/jsch-agent-
 
 2.   Restart Eclipse
 
-3.   Choose the ssh agent you want to use,
+3.   Choose the ssh agent you want to use
 
      Window > Preferences > General > Network Connections > SSH2 > SSH Agent
      ![ssh agent preferences screenshot](https://raw.githubusercontent.com/eclipseguru/eclipse-jsch-agent-proxy/gh-pages/images/ssh-agent-preferences.png "SSH Agent Preferences")
 
+4.   Remove all configured private keys (otherwise Eclipse keeps asking for passphrases)
+
+     Window > Preferences > General > Network Connections > SSH2 > SSH Agent
+     ![ssh no private keys preferences screenshot](https://raw.githubusercontent.com/eclipseguru/eclipse-jsch-agent-proxy/gh-pages/images/no-private-keys.png "No Private Keys Preferences")
 
 ## License
 This software is licensed under revised BSD license, and depends on other software.
