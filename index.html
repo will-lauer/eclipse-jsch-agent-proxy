@@ -1,68 +1,74 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>eclipse-jsch-agent-proxy by eclipseguru</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">eclipse-jsch-agent-proxy</h1>
-      <h2 class="project-tagline">ssh-agent and Pageant support for Eclipse</h2>
-      <a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy" class="btn">View on GitHub</a>
-      <a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <section class="main-content">
-      <h1>
-<a id="eclipse-jsch-agent-proxy" class="anchor" href="#eclipse-jsch-agent-proxy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>eclipse-jsch-agent-proxy</h1>
+    <div class="wrapper">
 
-<p>plug-ins to use ssh-agent and Pageant on Eclipse</p>
+      <section>
+        <div id="title">
+          <h1>eclipse-jsch-agent-proxy</h1>
+          <p>ssh-agent and Pageant support for Eclipse</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/eclipseguru">eclipseguru</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="eclipse-ssh-agent-and-pageant-support" class="anchor" href="#eclipse-ssh-agent-and-pageant-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse ssh-agent and Pageant support</h1>
+
+<p>This project provides Eclipse Plug-ins to use <a href="http://www.openssh.com/">OpenSSH</a>'s <a href="http://en.wikipedia.org/wiki/Ssh-agent">ssh-agent</a>
+and <a href="http://en.wikipedia.org/wiki/PuTTY#Applications">Pageant</a> in Eclipse.</p>
+
+<p>Provided plug-ins depend on <a href="http://www.jcraft.com/jsch-agent-proxy/">jsch-agent-proxy</a>. This is an effort for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=179924">Bug179924</a>.</p>
 
 <h2>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
-
-<p>This project provides Eclipse Plug-ins to use <a href="http://www.openssh.com/">OpenSSH</a>'s <a href="http://en.wikipedia.org/wiki/Ssh-agent">ssh-agent</a> and <a href="http://en.wikipedia.org/wiki/PuTTY#Applications">Pageant</a> on Eclipse.
-Provided plug-ins depend on <a href="http://www.jcraft.com/jsch-agent-proxy/">jsch-agent-proxy</a>. This is an effort for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=179924">Bug179924</a>.</p>
-
-<h2>
-<a id="how-to-try" class="anchor" href="#how-to-try" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to try</h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <ol>
 <li>
-<p>Those plug-ins expect jsch-0.1.49.  If you are using Eclipse Luna, you can skip this step.</p>
-
-<p>It is available at Eclipse Plug-in update site <a href="http://eclipse.jcraft.com/">http://eclipse.jcraft.com/</a>.
- Install that version through the menue,</p>
-
-<blockquote>
 <p>Help &gt; Install New Software...</p>
-</blockquote>
-</li>
-<li><p>Those plug-ins expect some changes for org.eclipse.jsch.{core, ui} plugins, and modified version is avalbale at
- <a href="https://github.com/ymnk/eclipse.platform.team/tree/bug179924">https://github.com/ymnk/eclipse.platform.team/tree/bug179924</a>
- Check out that branch into the workspace.</p></li>
-<li><p>Checkout plug-ins provided by this project into the workspace.</p></li>
-<li>
-<p>Run Eclipse with those plug-ins,</p>
 
-<blockquote>
-<p>Run &gt; Run As &gt; Eclipse Application</p>
-</blockquote>
+<p>Work with: <a href="https://eclipseguru.github.io/eclipse-jsch-agent-proxy/">https://eclipseguru.github.io/eclipse-jsch-agent-proxy/</a>
+ <img src="https://raw.githubusercontent.com/eclipseguru/eclipse-jsch-agent-proxy/gh-pages/images/install-software.png" alt="install software screenshot" title="Install New Software Dialog"></p>
+</li>
+<li><p>Restart Eclipse</p></li>
+<li>
+<p>Choose the ssh agent you want to use</p>
+
+<p>Window &gt; Preferences &gt; General &gt; Network Connections &gt; SSH2 &gt; SSH Agent
+ <img src="https://raw.githubusercontent.com/eclipseguru/eclipse-jsch-agent-proxy/gh-pages/images/ssh-agent-preferences.png" alt="ssh agent preferences screenshot" title="SSH Agent Preferences"></p>
 </li>
 <li>
-<p>Choose the ssh agent you want to use,</p>
+<p>Remove all configured private keys (otherwise Eclipse keeps asking for passphrases)</p>
 
-<blockquote>
-<p>Window &gt; Preferences &gt; General &gt; Network Connections &gt; SSH2 &gt; SSH Agent</p>
-</blockquote>
+<p>Window &gt; Preferences &gt; General &gt; Network Connections &gt; SSH2 &gt; SSH Agent
+ <img src="https://raw.githubusercontent.com/eclipseguru/eclipse-jsch-agent-proxy/gh-pages/images/no-private-keys.png" alt="ssh no private keys preferences screenshot" title="No Private Keys Preferences"></p>
 </li>
-<li><p>Try CVS or EGit plug-in.</p></li>
 </ol>
 
 <h2>
@@ -74,15 +80,10 @@ Provided plug-ins depend on <a href="http://www.jcraft.com/jsch-agent-proxy/">js
 <li>com.jcraft.jsch.agentproxy.eclipse.pageant is using <a href="https://github.com/twall/jna">JNA</a>, which is licensed under <a href="https://github.com/twall/jna/blob/master/LICENSE">Apache License, Version 2.0</a>.</li>
 <li>com.jcraft.jsch.agentproxy.eclipse.sshagent is using <a href="https://github.com/twall/jna">JNA</a>, which is licensed under <a href="https://github.com/twall/jna/blob/master/LICENSE">Apache License, Version 2.0</a>.</li>
 </ul>
+      </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/eclipseguru/eclipse-jsch-agent-proxy">eclipse-jsch-agent-proxy</a> is maintained by <a href="https://github.com/eclipseguru">eclipseguru</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
