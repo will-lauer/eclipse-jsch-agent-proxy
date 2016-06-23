@@ -6,7 +6,6 @@
 bin/*
 build
 build.eclipse
-build.properties
 target
 dist
 nbproject/private
