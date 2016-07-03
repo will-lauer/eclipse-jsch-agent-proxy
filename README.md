@@ -4,9 +4,6 @@ and [Pageant](http://en.wikipedia.org/wiki/PuTTY#Applications) in Eclipse.
 
 Provided plug-ins depend on [jsch-agent-proxy](http://www.jcraft.com/jsch-agent-proxy/). This is an effort for [Bug179924](https://bugs.eclipse.org/bugs/show_bug.cgi?id=179924).
 
-```html
-<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2956962" class="drag" title="Drag to your running Eclipse workspace to install SSH Agent Integration for Eclipse"><img class="img-responsive" src="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png" alt="Drag to your running Eclipse workspace to install SSH Agent Integration for Eclipse" /></a>
-```
 
 ## Install
 1.   Help > Install New Software...
