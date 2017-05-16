@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="jsch-agent-proxy">
+      Allow use of ssh-agent (maxos and linux) or pagaent (windows) to serve SSH2 private keys
+   </description>
+   <feature url="features/com.jcraft.jsch.agentproxy.eclipse.sshagent_1.0.0.qualifier.jar" id="com.jcraft.jsch.agentproxy.eclipse.sshagent" version="1.0.0.qualifier">
+      <category name="sss-agent"/>
+   </feature>
+   <category-def name="sss-agent" label="Eclipse ssh-agent Support"/>
+</site>
